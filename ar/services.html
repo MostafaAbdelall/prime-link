@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- 
+    =======================================================================
+    * PROJECT:     Professional Multi-page Portfolio
+    * PAGE:        Services (services.html)
+    * AUTHOR:      Mostafa
+    =======================================================================
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Services</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f8f9fa;
+      }
+      .service-card {
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- GLOBAL NAVIGATION BAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3 border-bottom border-light"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold text-dark d-flex align-items-center"
+          href="index.html"
+        >
+          <img
+            src="../assets/images/Logo RGB.jpg.jpeg"
+            alt=""
+            class="img-fluid"
+            style="height: 50px"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold text-uppercase text-secondary"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-semibold text-uppercase text-dark position-relative"
+                href="services.html"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold text-uppercase text-secondary"
+                href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold text-uppercase text-secondary"
+                href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a
+              href="contact.html"
+              class="btn btn-primary-dark px-4 py-2 rounded-0 text-white fw-semibold"
+              >Get</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ==========================================
+         START: SERVICES SECTION
+         Structure: Grid of Hoverable Bootstrap Cards
+         ========================================== -->
+    <section
+      class="services-hero py-5 position-relative bg-light overflow-hidden"
+    >
+      <div class="container py-4 position-relative" style="z-index: 2">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <span
+              class="text-primary fw-bold text-uppercase tracking-wider small d-block mb-2"
+              style="letter-spacing: 1px"
+              >Our Services</span
+            >
+            <h1
+              class="display-4 fw-bold text-dark-blue mb-4 position-relative pb-2"
+              style="letter-spacing: -0.5px"
+            >
+              Global Logistics Solutions
+              <span
+                class="position-absolute bottom-0 start-0 bg-primary"
+                style="width: 50px; height: 4px"
+              ></span>
+            </h1>
+            <p class="text-muted lh-base">
+              Comprehensive, reliable, and scalable freight services designed to
+              keep your supply chain moving with precision and transparency.
+            </p>
+          </div>
+          <div class="col-lg-7 text-center position-relative">
+            <img
+              src="../assets/images/global-freight-logistics.png"
+              alt="Global Logistics Solutions"
+              class="img-fluid rounded-3 shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services-grid-block py-5 bg-white">
+      <div class="container py-3">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="card service-detailed-card border-0 shadow-sm rounded-3 overflow-hidden h-100"
+            >
+              <div class="position-relative">
+                <img
+                  src="../assets/images/air freight.jpg"
+                  class="card-img-top"
+                  alt="Air Freight"
+                />
+                <div
+                  class="service-floating-icon bg-dark-blue rounded-circle d-flex align-items-center justify-content-center position-absolute shadow"
+                >
+                  <i class="fa-solid fa-plane text-white fs-5"></i>
+                </div>
+              </div>
+              <div class="card-body p-4 pt-5">
+                <h4
+                  class="fw-bold text-dark-blue mb-3 fs-5 position-relative pb-2 card-title-line"
+                >
+                  Air Freight
+                </h4>
+                <p class="text-muted small mb-4 lh-base">
+                  When time is critical, our global air freight network ensures
+                  expedited delivery to major international hubs.
+                </p>
+                <ul
+                  class="list-unstyled service-bullet-list small text-muted mb-0"
+                >
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i>Next
+                    flight out services
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i>Charter
+                    operations available
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i
+                    >Temperature-controlled transport
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="card service-detailed-card border-0 shadow-sm rounded-3 overflow-hidden h-100"
+            >
+              <div class="position-relative">
+                <img
+                  src="../assets/images/ocean-freight.jpg"
+                  class="card-img-top"
+                  alt="Ocean Freight"
+                />
+                <div
+                  class="service-floating-icon bg-dark-blue rounded-circle d-flex align-items-center justify-content-center position-absolute shadow"
+                >
+                  <i class="fa-solid fa-ship text-white fs-5"></i>
+                </div>
+              </div>
+              <div class="card-body p-4 pt-5">
+                <h4
+                  class="fw-bold text-dark-blue mb-3 fs-5 position-relative pb-2 card-title-line"
+                >
+                  Ocean Freight
+                </h4>
+                <p class="text-muted small mb-4 lh-base">
+                  Cost-effective solutions for high-volume cargo. We manage FCL,
+                  LCL (Container Load) and LCL (Less than Container Load)
+                  shipments across major trade routes.
+                </p>
+                <ul
+                  class="list-unstyled service-bullet-list small text-muted mb-0"
+                >
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i>FCL and
+                    LCL consolidation
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i
+                    >Breakbulk and project cargo
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i
+                    >Port-to-port and door-to-door
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="card service-detailed-card border-0 shadow-sm rounded-3 overflow-hidden h-100"
+            >
+              <div class="position-relative">
+                <img
+                  src="../assets/images/Land Freight.jpg"
+                  class="card-img-top"
+                  alt="Land Freight"
+                />
+                <div
+                  class="service-floating-icon bg-dark-blue rounded-circle d-flex align-items-center justify-content-center position-absolute shadow"
+                >
+                  <i class="fa-solid fa-truck text-white fs-5"></i>
+                </div>
+              </div>
+              <div class="card-body p-4 pt-5">
+                <h4
+                  class="fw-bold text-dark-blue mb-3 fs-5 position-relative pb-2 card-title-line"
+                >
+                  Land Freight
+                </h4>
+                <p class="text-muted small mb-4 lh-base">
+                  Reliable over-the-road trucking and intermodal rail services
+                  for domestic and cross-border distribution.
+                </p>
+                <ul
+                  class="list-unstyled service-bullet-list small text-muted mb-0"
+                >
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i>Full
+                    truckload (FTL) & less-than truckload (LTL)
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i
+                    >Cross-border road transport
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i
+                    >Real-time tracking & visibility
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="card service-detailed-card border-0 shadow-sm rounded-3 overflow-hidden h-100"
+            >
+              <div class="position-relative">
+                <img
+                  src="../assets/images/warehouse-bg.jpg"
+                  class="card-img-top"
+                  alt="Warehousing"
+                />
+                <div
+                  class="service-floating-icon bg-dark-blue rounded-circle d-flex align-items-center justify-content-center position-absolute shadow"
+                >
+                  <i class="fa-solid fa-warehouse text-white fs-5"></i>
+                </div>
+              </div>
+              <div class="card-body p-4 pt-5">
+                <h4
+                  class="fw-bold text-dark-blue mb-3 fs-5 position-relative pb-2 card-title-line"
+                >
+                  Warehousing
+                </h4>
+                <p class="text-muted small mb-4 lh-base">
+                  Secure, flexible, and strategically located warehousing
+                  solutions to optimize your inventory and fulfillment.
+                </p>
+                <ul
+                  class="list-unstyled service-bullet-list small text-muted mb-0"
+                >
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i>Short &
+                    long-term storage
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i
+                    >Inventory management
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i>Pick,
+                    pack & distribution
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="card service-detailed-card border-0 shadow-sm rounded-3 overflow-hidden h-100"
+            >
+              <div class="position-relative">
+                <img
+                  src="../assets/images/custom-clearance.png"
+                  class="card-img-top"
+                  alt="Custom Clearance"
+                />
+                <div
+                  class="service-floating-icon bg-dark-blue rounded-circle d-flex align-items-center justify-content-center position-absolute shadow"
+                >
+                  <i class="fa-solid fa-file-invoice text-white fs-5"></i>
+                </div>
+              </div>
+              <div class="card-body p-4 pt-5">
+                <h4
+                  class="fw-bold text-dark-blue mb-3 fs-5 position-relative pb-2 card-title-line"
+                >
+                  Custom Clearance
+                </h4>
+                <p class="text-muted small mb-4 lh-base">
+                  Navigate complex regulatory environments with our expert
+                  customs solutions to ensure compliance and smooth clearance.
+                </p>
+                <ul
+                  class="list-unstyled service-bullet-list small text-muted mb-0"
+                >
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i>Import &
+                    export clearance
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i
+                    >Documentation support
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i>Duty &
+                    tax consulting
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="card service-detailed-card border-0 shadow-sm rounded-3 overflow-hidden h-100"
+            >
+              <div class="position-relative">
+                <img
+                  src="../assets/images/sup.jpg"
+                  class="card-img-top"
+                  alt="Supply Chains"
+                />
+                <div
+                  class="service-floating-icon bg-dark-blue rounded-circle d-flex align-items-center justify-content-center position-absolute shadow"
+                >
+                  <i class="fa-solid fa-network-wired text-white fs-5"></i>
+                </div>
+              </div>
+              <div class="card-body p-4 pt-5">
+                <h4
+                  class="fw-bold text-dark-blue mb-3 fs-5 position-relative pb-2 card-title-line"
+                >
+                  Supply Chains
+                </h4>
+                <p class="text-muted small mb-4 lh-base">
+                  End-to-end supply chain management that connects people,
+                  processes, and partners for maximum efficiency.
+                </p>
+                <ul
+                  class="list-unstyled service-bullet-list small text-muted mb-0"
+                >
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i>Supply
+                    chain strategy
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i>Demand
+                    planning & forecasting
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle text-primary me-2"></i
+                    >End-to-end visibility
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stats-counter-bar py-4 bg-light border-top border-bottom">
+      <div class="container">
+        <div
+          class="row g-4 justify-content-center align-items-center text-center text-md-start"
+        >
+          <div
+            class="col-lg-3 col-sm-6 d-md-flex align-items-center justify-content-center gap-3 border-end-lg"
+          >
+            <div
+              class="stat-icon-box bg-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mx-md-0 mb-2 mb-md-0 shadow-sm"
+            >
+              <i class="fa-solid fa-globe text-white fs-5"></i>
+            </div>
+            <div>
+              <h3 class="fw-bold text-dark-blue mb-0 lh-1 fs-4">150+</h3>
+              <span
+                class="text-muted text-uppercase fw-semibold tracking-wider"
+                style="font-size: 0.65rem"
+                >Countries Served</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-sm-6 d-md-flex align-items-center justify-content-center gap-3 border-end-lg"
+          >
+            <div
+              class="stat-icon-box bg-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mx-md-0 mb-2 mb-md-0 shadow-sm"
+            >
+              <i class="fa-solid fa-box-open text-white fs-5"></i>
+            </div>
+            <div>
+              <h3 class="fw-bold text-dark-blue mb-0 lh-1 fs-4">1M+</h3>
+              <span
+                class="text-muted text-uppercase fw-semibold tracking-wider"
+                style="font-size: 0.65rem"
+                >Shipments Delivered</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-sm-6 d-md-flex align-items-center justify-content-center gap-3 border-end-lg"
+          >
+            <div
+              class="stat-icon-box bg-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mx-md-0 mb-2 mb-md-0 shadow-sm"
+            >
+              <i class="fa-solid fa-users text-white fs-5"></i>
+            </div>
+            <div>
+              <h3 class="fw-bold text-dark-blue mb-0 lh-1 fs-4">25+</h3>
+              <span
+                class="text-muted text-uppercase fw-semibold tracking-wider"
+                style="font-size: 0.65rem"
+                >Years of Experience</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-sm-6 d-md-flex align-items-center justify-content-center gap-3"
+          >
+            <div
+              class="stat-icon-box bg-primary rounded-circle d-flex align-items-center justify-content-center mx-auto mx-md-0 mb-2 mb-md-0 shadow-sm"
+            >
+              <i class="fa-solid fa-clock text-white fs-5"></i>
+            </div>
+            <div>
+              <h3 class="fw-bold text-dark-blue mb-0 lh-1 fs-4">99.9%</h3>
+              <span
+                class="text-muted text-uppercase fw-semibold tracking-wider"
+                style="font-size: 0.65rem"
+                >On-Time Delivery</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================================
+         END: SERVICES SECTION
+         ========================================== -->
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

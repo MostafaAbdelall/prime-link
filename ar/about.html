@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- 
+    =======================================================================
+    * PROJECT:     Professional Multi-page Portfolio
+    * VERSION:     1.0.0
+    * PAGE:        About Me (about.html)
+    * AUTHOR:      Mostafa
+    =======================================================================
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | About Me</title>
+
+    <!-- THIRD-PARTY CORE CSS STYLESHEETS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f8f9fa;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ==========================================
+         START: GLOBAL NAVIGATION BAR
+         ========================================== -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3 border-bottom border-light"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="../assets/images/Logo RGB.jpg.jpeg"
+            alt=""
+            class="img-fluid"
+            style="height: 50px"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold text-uppercase text-secondary"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold text-uppercase text-secondary"
+                href="services.html"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-semibold text-uppercase text-dark position-relative"
+                href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold text-uppercase text-secondary"
+                href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a
+              href="contact.html"
+              class="btn btn-primary-dark px-4 py-2 rounded-0 text-white fw-semibold"
+              >Get</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ==========================================
+         END: GLOBAL NAVIGATION BAR
+         ========================================== -->
+
+    <!-- ==========================================
+         START: ABOUT ME SECTION
+         Structure: Two-column layout (Image & Text)
+         ========================================== -->
+    <section
+      class="about-hero position-relative d-flex align-items-center py-5"
+      style="
+        background: url(&quot;../assets/images/about-bg.png&quot;) no-repeat
+          center center/cover;
+        min-height: 400px;
+      "
+    >
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100"
+        style="
+          background: linear-gradient(
+            to right,
+            rgba(3, 43, 105, 0.8),
+            rgba(3, 43, 105, 0.4)
+          );
+          z-index: 1;
+        "
+      ></div>
+
+      <div class="container position-relative text-white" style="z-index: 2">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1
+              class="display-3 fw-bold mb-3 pb-2 position-relative"
+              style="letter-spacing: -0.5px"
+            >
+              About Us
+              <span
+                class="position-absolute bottom-0 start-0 bg-primary"
+                style="width: 60px; height: 4px"
+              ></span>
+            </h1>
+            <p class="fs-5 opacity-90 fw-light">
+              Delivering trusted logistics solutions that connect businesses to
+              the world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="who-we-are py-5 bg-white">
+      <div class="container py-4">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-xl-4 col-lg-5">
+            <div class="pe-lg-3">
+              <span
+                class="text-primary fw-bold text-uppercase tracking-wider small d-block mb-2"
+                style="letter-spacing: 1px"
+                >Who We Are</span
+              >
+              <h2 class="fw-bold text-dark-blue mb-4 fs-3">
+                Your Trusted Logistics Partner
+              </h2>
+
+              <p class="text-muted small mb-3 lh-base">
+                At Prime Freight Solutions, we are driven by a simple mission:
+                to deliver reliable, efficient, and innovative logistics
+                services that help businesses grow and succeed globally.
+              </p>
+              <p class="text-muted small mb-0 lh-base">
+                With a strong global network, industry expertise, and a
+                customer-first approach, we provide end-to-end supply chain
+                solutions tailored to your needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xl-8 col-lg-7">
+            <div class="row g-4 h-100">
+              <div
+                class="col-sm-6 col-md-3 text-center value-card-col border-start-md"
+              >
+                <div
+                  class="value-icon-wrap mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle bg-light-blue"
+                >
+                  <i class="fa-solid fa-earth-americas text-primary fs-4"></i>
+                </div>
+                <h6
+                  class="fw-bold text-dark-blue mb-2 small"
+                  style="font-size: 0.9rem"
+                >
+                  Global Network
+                </h6>
+                <p
+                  class="text-muted mb-0 px-2"
+                  style="font-size: 0.78rem; line-height: 1.4"
+                >
+                  Extensive network across 150+ countries to connect your cargo
+                  to any destination.
+                </p>
+              </div>
+
+              <div
+                class="col-sm-6 col-md-3 text-center value-card-col border-start-md"
+              >
+                <div
+                  class="value-icon-wrap mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle bg-light-blue"
+                >
+                  <i class="fa-solid fa-shield-halved text-primary fs-4"></i>
+                </div>
+                <h6
+                  class="fw-bold text-dark-blue mb-2 small"
+                  style="font-size: 0.9rem"
+                >
+                  Reliable & Secure
+                </h6>
+                <p
+                  class="text-muted mb-0 px-2"
+                  style="font-size: 0.78rem; line-height: 1.4"
+                >
+                  We ensure the safety and security of your cargo with
+                  industry-leading standards.
+                </p>
+              </div>
+
+              <div
+                class="col-sm-6 col-md-3 text-center value-card-col border-start-md"
+              >
+                <div
+                  class="value-icon-wrap mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle bg-light-blue"
+                >
+                  <i class="fa-solid fa-user-group text-primary fs-4"></i>
+                </div>
+                <h6
+                  class="fw-bold text-dark-blue mb-2 small"
+                  style="font-size: 0.9rem"
+                >
+                  Customer Focused
+                </h6>
+                <p
+                  class="text-muted mb-0 px-2"
+                  style="font-size: 0.78rem; line-height: 1.4"
+                >
+                  Our customers are at the heart of everything we do. Your
+                  success is our priority.
+                </p>
+              </div>
+
+              <div
+                class="col-sm-6 col-md-3 text-center value-card-col border-start-md"
+              >
+                <div
+                  class="value-icon-wrap mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle bg-light-blue"
+                >
+                  <i class="fa-solid fa-chart-line text-primary fs-4"></i>
+                </div>
+                <h6
+                  class="fw-bold text-dark-blue mb-2 small"
+                  style="font-size: 0.9rem"
+                >
+                  Driven by Excellence
+                </h6>
+                <p
+                  class="text-muted mb-0 px-2"
+                  style="font-size: 0.78rem; line-height: 1.4"
+                >
+                  We continuously innovate to deliver efficient solutions and
+                  outstanding value.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 pt-3">
+          <div class="col-12">
+            <div
+              class="quote-banner-bar d-flex align-items-center gap-3 rounded-3 p-3 text-white shadow-sm"
+            >
+              <div class="quote-icon fs-3 ps-2">
+                <i class="fa-solid fa-quote-left opacity-50"></i>
+              </div>
+              <p class="mb-0 fw-semibold tracking-wide fs-6">
+                We don't just move cargo. We move businesses forward.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================================
+         END: ABOUT ME SECTION
+         ========================================== -->
+
+    <!-- CORE SCRIPTS ATTACHMENT -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

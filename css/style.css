@@ -1,0 +1,429 @@
+/* =========================================================================
+   * PREMIUM CORPORATE GLOBAL STYLESHEET
+   * APPLICATION: Logistics & Freight Digital Interface
+   * ARCHITECT:   Mostafa
+   * VERSION:     1.0.0
+   * TYPE:        Cascading Style Sheets (LTR Core)
+   ========================================================================= */
+
+/* -------------------------------------------------------------------------
+   1. GLOBAL ARCHITECTURE VARIABLES & DESIGN TOKENS
+   ------------------------------------------------------------------------- */
+:root {
+    /* Brand Identity Color Tokens */
+    --brand-dark-blue: #032b69;      /* Primary institutional corporate shade */
+    --brand-primary-blue: #0d6efd;   /* Dynamic interaction blue color */
+    
+    /* Global Transition Presets for Interactive Elements */
+    --transition-base: all 0.3s ease-in-out;
+}
+
+/* -------------------------------------------------------------------------
+   2. GLOBAL ROUTING OVERRIDES & BODY PRESETS
+   ------------------------------------------------------------------------- */
+body {
+    background-color: #f4f6f9;       /* Light gray base surface layer */
+    color: #333333;                  /* High contrast body text layout */
+}
+
+/* -------------------------------------------------------------------------
+   3. GLOBAL NAVIGATION HEADER EXTENSIONS
+   ------------------------------------------------------------------------- */
+/* Active Page Indicator Underline Layer */
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background-color: var(--brand-dark-blue);
+    bottom: -5px;
+    left: 20%;
+}
+
+/* Custom Institutional Action Button State */
+.btn-primary-dark {
+    background-color: var(--brand-dark-blue);
+    border: 1px solid var(--brand-dark-blue);
+    transition: var(--transition-base);
+}
+.btn-primary-dark:hover {
+    background-color: #021c44;
+    color: #ffffff;
+}
+
+/* -------------------------------------------------------------------------
+   4. HERO BANNER CONFIGURATION UTILITIES
+   ------------------------------------------------------------------------- */
+.hero-banner {
+    min-height: 85vh;
+    background: url('../assets/images/hero-bg.jpg') no-repeat center center/cover;
+    background-attachment: fixed;    /* Parallax visual movement preset */
+}
+
+/* Background Opacity Gradient Layer */
+.hero-overlay {
+    background: linear-gradient(to right, rgba(3, 43, 105, 0.85), rgba(13, 110, 253, 0.6));
+    z-index: 0;
+}
+
+/* Dense Typography Line-Height Utility */
+.tracking-tight {
+    letter-spacing: -1px;
+}
+
+/* Sharp Corporate Dynamic Button Overrides */
+.btn-white {
+    background-color: #ffffff;
+    color: var(--brand-dark-blue);
+    border: 1px solid #ffffff;
+    transition: var(--transition-base);
+}
+.btn-white:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.btn-outline-white {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: var(--transition-base);
+}
+.btn-outline-white:hover {
+    background-color: #ffffff;
+    color: var(--brand-dark-blue);
+}
+
+/* -------------------------------------------------------------------------
+   5. CORE SERVICES & SOLUTIONS SECTION STRUCTURAL DESIGN
+   ------------------------------------------------------------------------- */
+/* Text tracking definitions */
+.small-tracking {
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+}
+
+/* Soft Decorative Circular Background for Core Features */
+.bg-light-blue {
+    background-color: #f0f4f9;
+}
+
+/* Micro-interaction Container for Vector Assets */
+.feature-icon-wrap {
+    width: 48px;
+    height: 48px;
+    border: none;
+    transition: var(--transition-base);
+}
+
+/* Feature Component Interactive States */
+.feature-item:hover .bg-light-blue {
+    background-color: var(--brand-primary-blue);
+}
+.feature-item:hover .feature-icon-wrap i {
+    color: #ffffff !important;
+}
+
+/* Palette Specific Branding Layer */
+.text-dark-blue {
+    color: var(--brand-dark-blue);
+}
+
+/* -------------------------------------------------------------------------
+   6. SPLIT CARDS ARCHITECTURE LAYOUT
+   ------------------------------------------------------------------------- */
+/* Asymmetric Flexbox Dashboard Panel */
+.service-panel-card {
+    background-color: var(--brand-dark-blue);
+    min-height: 240px;
+    transition: var(--transition-base);
+}
+
+/* Content Container Metadata Layer */
+.service-panel-info {
+    flex: 1;
+    background-color: var(--brand-dark-blue);
+}
+
+/* Asymmetric Background Image Asset Engine */
+.service-panel-img {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;              /* Fallback preset layer for viewports */
+}
+
+/* Interactive Card Vector Presets */
+.service-panel-icon {
+    width: 45px;
+    height: 45px;
+}
+
+.tracking-wide {
+    letter-spacing: 1px;
+}
+
+/* Card Micro-interaction Elevation Translate Animations */
+.service-panel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(3, 43, 105, 0.15) !important;
+}
+
+/* -------------------------------------------------------------------------
+   7. PERFORMANCE METRICS DIVIDER ARCHITECTURE
+   ------------------------------------------------------------------------- */
+.bottom-stats-bar {
+    background-color: #ffffff;
+}
+
+/* Responsive Desktop Column Separator System */
+@media (min-width: 1200px) {
+    .bottom-stat-col {
+        border-right: 1px solid #e9ecef;
+        padding-right: 2rem;
+    }
+}
+
+/* Dynamic Performance Counter Vector Asset Color Match */
+.stat-icon i {
+    color: var(--brand-primary-blue);
+}
+
+/* =========================================================================
+   * END OF LOGISTICS STYLE IMPLEMENTATION LAYER
+   ========================================================================= */
+
+
+   /* =========================================================================
+   * SERVICES MAIN SECTION STYLE SHEET
+   * APPLICATION: About Us Interface Settings
+   * ARCHITECT:   Mostafa
+   ========================================================================= */
+
+/* -------------------------------------------------------------------------
+   1. HERO BANNER REINFORCEMENTS
+   ------------------------------------------------------------------------- */
+.about-hero {
+    background-size: cover;
+    background-position: center !important;
+}
+
+/* -------------------------------------------------------------------------
+   2. CORE FEATURES COMPONENT OVERRIDES
+   ------------------------------------------------------------------------- */
+.bg-light-blue {
+    background-color: #f0f4f9;
+}
+
+.value-icon-wrap {
+    width: 60px;
+    height: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Micro-interaction Styles on Hover Trigger */
+.value-card-col:hover .bg-light-blue {
+    background-color: #0d6efd !important; /* Maps dynamic interaction blue color */
+}
+
+.value-card-col:hover .value-icon-wrap i {
+    color: #ffffff !important;
+}
+
+/* -------------------------------------------------------------------------
+   3. CORPORATE QUOTE BLOCK PRESETS
+   ------------------------------------------------------------------------- */
+.quote-banner-bar {
+    background-color: #032b69; /* Institutional corporate dark blue */
+}
+
+/* Responsive Structural Desktop Thin Layout Grid Separator */
+@media (min-width: 768px) {
+    .border-start-md {
+        border-left: 1px solid #e9ecef !important;
+    }
+}
+/* =========================================================================
+   * DETAILED SERVICES INTERFACE STYLE SHEET
+   * APPLICATION: Custom UI Component Enhancements
+   * ARCHITECT:   Mostafa
+   ========================================================================= */
+
+/* 1. HERO GRAPHIC EXTRA CONFIG */
+.services-hero {
+    background-color: #f8f9fa !important;
+}
+
+/* 2. SERVICES CARD DETAILED LAYOUT */
+.service-detailed-card {
+    transition: all 0.3s ease-in-out;
+    background-color: #fdfdfd;
+}
+
+/* Floating Icon Placement Override */
+.service-floating-icon {
+    width: 46px;
+    height: 46px;
+    bottom: -23px;
+    left: 25px;
+    border: 2px solid #ffffff;
+    z-index: 3;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Text Accent Line Style Under Service Title */
+.card-title-line::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2.5px;
+    background-color: #0d6efd; /* Brand primary blue */
+}
+
+/* Mini Dot Bullet List Optimization */
+.service-bullet-list li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+.service-bullet-list li i {
+    font-size: 6px !important; /* Forces ultra-small micro dot layout */
+}
+
+/* Hover Zoom & Card Lift Animation Curve */
+.service-detailed-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 1rem 2.5rem rgba(3, 43, 105, 0.12) !important;
+}
+.service-detailed-card:hover .service-floating-icon {
+    background-color: #0d6efd !important; /* Icon shifts to light blue on card focus */
+}
+
+/* 3. BOTTOM STATS COUNTER BAR COMPONENTS */
+.stat-icon-box {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+}
+
+/* Responsive Grid Vertical Thin Separator Systems */
+@media (min-width: 992px) {
+    .border-end-lg {
+        border-right: 1px solid #dee2e6 !important;
+    }
+}
+/* =========================================================================
+   * DETAILED CONTACT US INTERFACE STYLE SHEET - UPDATED V2
+   * APPLICATION: Custom Brand Layout & Alignment Fixes
+   * ARCHITECT:   Mostafa
+   ========================================================================= */
+
+/* 1. HERO REINFORCEMENT SETTINGS */
+.contact-hero {
+
+    background: url('https://picsum.photos/id/11/1920/600') no-repeat center center;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 450px;
+}
+
+/* 2. CORE SYSTEM INTERACTION OVERRIDES */
+.text-dark-blue {
+    color: #032b69 !important;
+}
+
+.bg-form-light {
+    background-color: #f8fafd !important;
+}
+
+.btn-dark-blue {
+    background-color: #032b69 !important;
+    border: none !important;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-dark-blue:hover {
+    background-color: #0d6efd !important;
+}
+
+
+.contact-circle-icon {
+    width: 40px !important;
+    height: 40px !important;
+    background-color: #032b69 !important; 
+    color: #ffffff !important;
+    border-radius: 50% !important;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px; 
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(3, 43, 105, 0.15);
+}
+
+.contact-circle-icon i {
+    color: #ffffff !important;
+    font-size: 0.95rem !important;
+    vertical-align: middle;
+}
+
+.contact-interface-block .d-flex {
+    margin-bottom: 1.5rem !important;
+}
+
+/*(Form Fields) */
+.contact-panel-form .form-control {
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    padding: 0.75rem 1rem !important;
+    font-size: 0.85rem !important;
+    border-radius: 6px !important;
+    color: #334155 !important;
+}
+
+.contact-panel-form .form-control::placeholder {
+    color: #94a3b8 !important;
+}
+
+.contact-panel-form .form-control:focus {
+    border-color: #0d6efd !important;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1) !important;
+    outline: none !important;
+}
+
+/* 3. BRAND ADAPTIVE UTILITIES SIDEBAR PANEL OVERRIDES */
+.corporate-brand-card {
+    background: linear-gradient(135deg, #032b69 0%, #021a3f 100%) !important;
+    padding: 3rem !important;
+    min-height: 400px;
+}
+
+
+.contact-grid-mask {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px) !important;
+    background-size: 16px 16px !important;
+}
+
+/* 4. COUNTER BAR FIXES */
+.stat-icon-box {
+    width: 45px;
+    height: 45px;
+    background-color: #0d6efd !important;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+}
+
+.stat-icon-box i {
+    color: #ffffff !important;
+}
+
+
+@media (min-width: 992px) {
+    .border-end-lg {
+        border-right: 1px solid #dee2e6 !important;
+    }
+}

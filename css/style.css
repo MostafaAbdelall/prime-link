@@ -127,7 +127,7 @@ body {
 
 /* Palette Specific Branding Layer */
 .text-dark-blue {
-    color: var(--brand-dark-blue);
+    color: var(--brand-dark-blue) !important;
 }
 
 /* -------------------------------------------------------------------------
@@ -174,7 +174,7 @@ body {
    7. PERFORMANCE METRICS DIVIDER ARCHITECTURE
    ------------------------------------------------------------------------- */
 .bottom-stats-bar {
-    background-color: #ffffff;
+    background-color: #3333ff;
 }
 
 /* Responsive Desktop Column Separator System */
@@ -191,31 +191,16 @@ body {
 }
 
 /* =========================================================================
-   * END OF LOGISTICS STYLE IMPLEMENTATION LAYER
+   * ABOUT & CORE VALUES STYLE SHEET
    ========================================================================= */
 
-
-   /* =========================================================================
-   * SERVICES MAIN SECTION STYLE SHEET
-   * APPLICATION: About Us Interface Settings
-   * ARCHITECT:   Mostafa
-   ========================================================================= */
-
-/* -------------------------------------------------------------------------
-   1. HERO BANNER REINFORCEMENTS
-   ------------------------------------------------------------------------- */
+/* 1. HERO BANNER REINFORCEMENTS */
 .about-hero {
     background-size: cover;
     background-position: center !important;
 }
 
-/* -------------------------------------------------------------------------
-   2. CORE FEATURES COMPONENT OVERRIDES
-   ------------------------------------------------------------------------- */
-.bg-light-blue {
-    background-color: #f0f4f9;
-}
-
+/* 2. CORE FEATURES COMPONENT OVERRIDES */
 .value-icon-wrap {
     width: 60px;
     height: 60px;
@@ -231,9 +216,7 @@ body {
     color: #ffffff !important;
 }
 
-/* -------------------------------------------------------------------------
-   3. CORPORATE QUOTE BLOCK PRESETS
-   ------------------------------------------------------------------------- */
+/* 3. CORPORATE QUOTE BLOCK PRESETS */
 .quote-banner-bar {
     background-color: #032b69; /* Institutional corporate dark blue */
 }
@@ -244,6 +227,7 @@ body {
         border-left: 1px solid #e9ecef !important;
     }
 }
+
 /* =========================================================================
    * DETAILED SERVICES INTERFACE STYLE SHEET
    * APPLICATION: Custom UI Component Enhancements
@@ -306,7 +290,16 @@ body {
 .stat-icon-box {
     width: 45px;
     height: 45px;
+    background-color: #0d6efd !important;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
     flex-shrink: 0;
+}
+
+.stat-icon-box i {
+    color: #ffffff !important;
 }
 
 /* Responsive Grid Vertical Thin Separator Systems */
@@ -315,15 +308,15 @@ body {
         border-right: 1px solid #dee2e6 !important;
     }
 }
+
 /* =========================================================================
-   * DETAILED CONTACT US INTERFACE STYLE SHEET - UPDATED V2
+   * DETAILED CONTACT US INTERFACE STYLE SHEET
    * APPLICATION: Custom Brand Layout & Alignment Fixes
    * ARCHITECT:   Mostafa
    ========================================================================= */
 
 /* 1. HERO REINFORCEMENT SETTINGS */
 .contact-hero {
-
     background: url('https://picsum.photos/id/11/1920/600') no-repeat center center;
     background-size: cover !important;
     background-position: center !important;
@@ -331,10 +324,6 @@ body {
 }
 
 /* 2. CORE SYSTEM INTERACTION OVERRIDES */
-.text-dark-blue {
-    color: #032b69 !important;
-}
-
 .bg-form-light {
     background-color: #f8fafd !important;
 }
@@ -348,7 +337,6 @@ body {
 .btn-dark-blue:hover {
     background-color: #0d6efd !important;
 }
-
 
 .contact-circle-icon {
     width: 40px !important;
@@ -373,7 +361,7 @@ body {
     margin-bottom: 1.5rem !important;
 }
 
-/*(Form Fields) */
+/* Form Fields Styling */
 .contact-panel-form .form-control {
     background-color: #ffffff !important;
     border: 1px solid #e2e8f0 !important;
@@ -400,30 +388,75 @@ body {
     min-height: 400px;
 }
 
-
 .contact-grid-mask {
     background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px) !important;
     background-size: 16px 16px !important;
 }
 
-/* 4. COUNTER BAR FIXES */
-.stat-icon-box {
-    width: 45px;
-    height: 45px;
-    background-color: #0d6efd !important;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    line-height: 45px;
+/* =========================================================================
+   * MAIN FOOTER CONTAINER COMPONENT
+   ========================================================================= */
+.main-footer {
+    background-color: #f8fafc; /* Light off-white background from the design image */
+    padding: 40px 0 10px 0;
+    border-top: 1px solid #e2e8f0; /* Soft top border line */
 }
 
-.stat-icon-box i {
-    color: #ffffff !important;
+.footer-logo {
+    max-height: 60px; /* Aligns the branding logo scale proportionally */
+    display: block;
 }
 
+/* Headings: Network, Support, Legal */
+.footer-heading {
+    color: #0c4a6e; /* Deep ocean navy blue from the design headers */
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
-@media (min-width: 992px) {
-    .border-end-lg {
-        border-right: 1px solid #dee2e6 !important;
-    }
+.footer-links li {
+    margin-bottom: 4px;
+}
+
+/* Styling the icons and links text color */
+.footer-links a {
+    color: #64748b; /* Soft slate gray from the design layout */
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Subtle icon alignment inside the link */
+.footer-links a i {
+    color: #64748b; /* Icons match the exact text color */
+    transition: all 0.5s ease;
+}
+
+/* Darker blue color feedback on user hover */
+.footer-links a:hover,
+.footer-links a:hover i {
+    color: #0c4a6e; 
+    padding-left: 5px;
+}
+
+/* Copyright text and alignment */
+.copyright-text {
+    font-size: 14px;
+    color: #64748b; /* Matching the soft legal text color */
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+/* Keeping your highlight span clean and integrated */
+.copyright-text .highlight {
+    color: #0c4a6e;
+    font-weight: 600;
+}
+
+/* Softening your existing divider to blend with the light theme */
+.footer-divider {
+    border-top: 1px solid #e2e8f0;
+    margin: 30px 0 10px 0;
+    opacity: 1;
 }

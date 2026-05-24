@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
 
       // Setup destination WhatsApp number from your branding guidelines
-      const targetWhatsApp = "201154314532";
+      const targetWhatsApp = "201037474761";
       const currentForm = e.target;
 
       const uiLoader = document.getElementById("statusLoading");

@@ -1,9 +1,9 @@
 /* =========================================================================
-   * PREMIUM CORPORATE GLOBAL STYLESHEET
-   * APPLICATION: Logistics & Freight Digital Interface
-   * ARCHITECT:   Mostafa
-   * VERSION:     1.0.0
-   * TYPE:        Cascading Style Sheets (LTR Core)
+* PROJECT: Logistics & Freight Digital Interface
+ * MODULE:  Core Stylesheet (LTR/RTL Support)
+ * AUTHOR:  Mostafa Abdel-All
+ * VERSION: 1.0.0
+ * NOTE:    Global design tokens and component-specific overrides.
    ========================================================================= */
 
 /* -------------------------------------------------------------------------
@@ -397,19 +397,19 @@ body {
    * MAIN FOOTER CONTAINER COMPONENT
    ========================================================================= */
 .main-footer {
-    background-color: #f8fafc; /* Light off-white background from the design image */
+    background-color: #f8fafc; /* Light off-white background */
     padding: 40px 0 10px 0;
     border-top: 1px solid #e2e8f0; /* Soft top border line */
 }
 
 .footer-logo {
-    max-height: 60px; /* Aligns the branding logo scale proportionally */
+    max-height: 60px; /* Logo scaling */
     display: block;
 }
 
 /* Headings: Network, Support, Legal */
 .footer-heading {
-    color: #0c4a6e; /* Deep ocean navy blue from the design headers */
+    color: #0c4a6e; /* Deep ocean navy blue */
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -421,7 +421,7 @@ body {
 
 /* Styling the icons and links text color */
 .footer-links a {
-    color: #64748b; /* Soft slate gray from the design layout */
+    color: #64748b; /* Soft slate gray */
     text-decoration: none;
     font-size: 15px;
     transition: color 0.2s ease-in-out;
@@ -429,7 +429,7 @@ body {
 
 /* Subtle icon alignment inside the link */
 .footer-links a i {
-    color: #64748b; /* Icons match the exact text color */
+    color: #64748b; /* Icons match the text color */
     transition: all 0.5s ease;
 }
 
@@ -443,20 +443,106 @@ body {
 /* Copyright text and alignment */
 .copyright-text {
     font-size: 14px;
-    color: #64748b; /* Matching the soft legal text color */
+    color: #64748b; /* Soft legal text color */
     line-height: 1.6;
     margin-top: 15px;
 }
 
-/* Keeping your highlight span clean and integrated */
+/* Highlight span styling */
 .copyright-text .highlight {
     color: #0c4a6e;
     font-weight: 600;
 }
 
-/* Softening your existing divider to blend with the light theme */
+/* Footer divider styling */
 .footer-divider {
     border-top: 1px solid #e2e8f0;
     margin: 30px 0 10px 0;
     opacity: 1;
+}
+
+/* =========================================================================
+   * PREMIUM CORPORATE GLOBAL STYLESHEET (RTL SUPPORT)
+   * APPLICATION: Logistics & Freight Digital Interface
+   * ARCHITECT: Mostafa
+   * ========================================================================= */
+
+/* 1. Basic body adjustments for RTL */
+body.rtl {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Tajawal', 'Cairo', sans-serif; /* Arabic fonts */
+}
+
+/* 2. Adjust navigation bar */
+.rtl .navbar-nav .nav-link.active::after {
+    left: auto;
+    right: 20%; /* Reverse underline position */
+}
+
+/* 3. Adjust hero banner gradient */
+.rtl .hero-overlay {
+    background: linear-gradient(to left, rgba(3, 43, 105, 0.85), rgba(13, 110, 253, 0.6)); /* Reverse gradient direction */
+}
+
+/* 4. Adjust service cards */
+.rtl .service-floating-icon {
+    left: auto;
+    right: 25px; /* Move floating icon to the right */
+}
+
+.rtl .card-title-line::after {
+    left: auto;
+    right: 0; /* Title line starts from the right */
+}
+
+.rtl .service-bullet-list li i {
+    margin-left: 8px; /* Margin adjustment for icon */
+    margin-right: 0;
+}
+
+/* 5. Adjust borders and separators */
+@media (min-width: 1200px) {
+    .rtl .bottom-stat-col {
+        border-right: none !important;
+        border-left: 1px solid #e9ecef; /* Switch separator to the left */
+        padding-right: 0;
+        padding-left: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .rtl .border-start-md {
+        border-left: none !important;
+        border-right: 1px solid #e9ecef !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .rtl .border-end-lg {
+        border-right: none !important;
+        border-left: 1px solid #dee2e6 !important;
+    }
+}
+
+/* 6. Hover animations */
+.rtl .footer-links a:hover,
+.rtl .footer-links a:hover i {
+    padding-left: 0;
+    padding-right: 5px; /* Move to the right on hover */
+}
+
+/* 7. Corporate brand card */
+.rtl .corporate-brand-card {
+    background: linear-gradient(-135deg, #032b69 0%, #021a3f 100%) !important; /* Reverse gradient angle */
+}
+
+/* 8. Contact icons */
+.rtl .contact-circle-icon {
+    margin-left: 15px; /* Margin adjustment */
+    margin-right: 0;
+}
+.rtl .card-title-line::after { 
+    right: 0;
+    left: auto; /* Override previous left alignment */
 }

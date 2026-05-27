@@ -1,0 +1,205 @@
+/* =========================================================================
+   * PREMIUM CORPORATE GLOBAL STYLESHEET (RTL VERSION)
+   * APPLICATION: Logistics & Freight Digital Interface
+   * ARCHITECT: Mostafa
+   * ========================================================================= */
+
+:root {
+    --brand-dark-blue: #032b69;
+    --brand-primary-blue: #0d6efd;
+    --transition-base: all 0.3s ease-in-out;
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    background-color: #f4f6f9;
+    color: #333333;
+}
+
+/* -------------------------------------------------------------------------
+   3. GLOBAL NAVIGATION (RTL Adjustments)
+   ------------------------------------------------------------------------- */
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background-color: var(--brand-dark-blue);
+    bottom: -5px;
+    right: 20%; /* Shifted alignment from left to right for accurate horizontal centering in RTL layout */
+    left: auto;
+}
+
+/* -------------------------------------------------------------------------
+   4. HERO BANNER
+   ------------------------------------------------------------------------- */
+.hero-overlay {
+    /* Inverted gradient direction flow to align with right-to-left visual hierarchy */
+    background: linear-gradient(to left, rgba(3, 43, 105, 0.85), rgba(13, 110, 253, 0.6));
+}
+
+/* -------------------------------------------------------------------------
+   5. CORE SERVICES (Logical Properties)
+   ------------------------------------------------------------------------- */
+.small-tracking {
+    letter-spacing: 0; /* Letter-spacing is disabled to preserve Arabic typeface typography and readability */
+    font-size: 0.85rem;
+}
+
+/* -------------------------------------------------------------------------
+   6. SPLIT CARDS (Flex Direction)
+   ------------------------------------------------------------------------- */
+.service-panel-card {
+    transition: var(--transition-base);
+}
+
+.service-panel-card:hover {
+    transform: translateY(-5px);
+}
+
+/* -------------------------------------------------------------------------
+   7. PERFORMANCE METRICS (Responsive Borders)
+   ------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+    .bottom-stat-col {
+        border-inline-end: 1px solid #e9ecef; /* Utilizes logical properties to fallback to border-right automatically in RTL */
+        padding-inline-end: 2rem;
+    }
+}
+
+/* -------------------------------------------------------------------------
+   DETAILED SERVICES INTERFACE
+   ------------------------------------------------------------------------- */
+.service-floating-icon {
+    right: 25px; /* Swapped positioning from left to right for proper RTL alignment */
+    left: auto;
+    border: 2px solid #ffffff;
+}
+
+.card-title-line::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0; /* Section indicator line anchors to the right corner under the heading */
+    left: auto;
+    width: 30px;
+    height: 2.5px;
+    background-color: #0d6efd;
+}
+
+.service-bullet-list li i {
+    margin-inline-end: 10px; /* Provides consistent spacing on the inner edge of the icon within the list element */
+}
+
+/* -------------------------------------------------------------------------
+   CONTACT US INTERFACE
+   ------------------------------------------------------------------------- */
+.contact-hero {
+    background-position: center !important;
+}
+
+.contact-panel-form .form-control {
+    text-align: right;
+}
+
+/* -------------------------------------------------------------------------
+   MAIN FOOTER (RTL Logic)
+   ------------------------------------------------------------------------- */
+.footer-links a:hover,
+.footer-links a:hover i {
+    padding-inline-start: 5px; /* Shifts link rightward on hover to create a modern interactive feedback loop */
+    padding-left: 0;
+}
+
+.copyright-text {
+    text-align: right;
+}
+
+@media (min-width: 768px) {
+    .border-start-md {
+        border-right: 1px solid #e9ecef !important; /* Reverses border orientation to mirror standard column dividers */
+        border-left: none !important;
+    }
+}
+
+
+/* 1. Basic body adjustments for RTL */
+body.rtl {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Tajawal', 'Cairo', sans-serif; /* Arabic fonts */
+}
+
+/* 2. Adjust navigation bar */
+.rtl .navbar-nav .nav-link.active::after {
+    left: auto;
+    right: 20%; /* Reverse underline position */
+}
+
+/* 3. Adjust hero banner gradient */
+.rtl .hero-overlay {
+    background: linear-gradient(to left, rgba(3, 43, 105, 0.85), rgba(13, 110, 253, 0.6)); /* Reverse gradient direction */
+}
+
+/* 4. Adjust service cards */
+.rtl .service-floating-icon {
+    left: auto;
+    right: 25px; /* Move floating icon to the right */
+}
+
+.rtl .card-title-line::after {
+    left: auto;
+    right: 0; /* Title line starts from the right */
+}
+
+.rtl .service-bullet-list li i {
+    margin-left: 8px; /* Margin adjustment for icon */
+    margin-right: 0;
+}
+
+/* 5. Adjust borders and separators */
+@media (min-width: 1200px) {
+    .rtl .bottom-stat-col {
+        border-right: none !important;
+        border-left: 1px solid #e9ecef; /* Switch separator to the left */
+        padding-right: 0;
+        padding-left: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .rtl .border-start-md {
+        border-left: none !important;
+        border-right: 1px solid #e9ecef !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .rtl .border-end-lg {
+        border-right: none !important;
+        border-left: 1px solid #dee2e6 !important;
+    }
+}
+
+/* 6. Hover animations */
+.rtl .footer-links a:hover,
+.rtl .footer-links a:hover i {
+    padding-left: 0;
+    padding-right: 5px; /* Move to the right on hover */
+}
+
+/* 7. Corporate brand card */
+.rtl .corporate-brand-card {
+    background: linear-gradient(-135deg, #032b69 0%, #021a3f 100%) !important; /* Reverse gradient angle */
+}
+
+/* 8. Contact icons */
+.rtl .contact-circle-icon {
+    margin-left: 15px; /* Margin adjustment */
+    margin-right: 0;
+}
+.rtl .card-title-line::after { 
+    right: 0;
+    left: auto; /* Override previous left alignment */
+}

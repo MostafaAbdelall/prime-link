@@ -5,12 +5,28 @@
     =======================================================================
     * PROJECT:     Professional Multi-page Portfolio
     * PAGE:        Services (services.html)
-    * AUTHOR:      Mostafa
+    * DESCRIPTION: Services Page (English Version)with Multilingual Setup
+    * VERSION:     1.0.0
+    * AUTHOR:      Mostafa Abdel-All
     =======================================================================
     -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Services</title>
+    <meta
+      name="description"
+      content="Freight Forwarding | Logistics Services | Air Freight | Sea Freight | Customs Clearance | Warehousing | supply chain 
+               All international shipping services 
+               Global Shipping Solutions
+               Linking markets with the best service"
+    />
+    <meta
+      name="keywords"
+      content="Freight Forwarding, Logistics Services, Air Freight, Sea Freight, Customs Clearance, Warehousing, supply chain, All international shipping services, Global Shipping Solutions, Linking markets with the best service"
+    />
+    <meta name="author" content="Mostafa Abdel-All" />
+    <title>Prime Link</title>
+
+    <!-- THIRD-PARTY CORE CSS STYLESHEETS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -19,8 +35,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <!-- Bootstrap 5 Compiled CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Custom Global Stylesheet -->
     <link rel="stylesheet" href="../css/style.css" />
+
     <style>
       body {
         font-family: "Poppins", sans-serif;
@@ -38,7 +57,9 @@
     </style>
   </head>
   <body>
-    <!-- GLOBAL NAVIGATION BAR -->
+    <!-- ==========================================
+          START: GLOBAL NAVIGATION BAR
+          ========================================== -->
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3 border-bottom border-light"
     >
@@ -101,17 +122,25 @@
           <div class="d-flex">
             <a
               href="contact.html"
-              class="btn btn-primary-dark px-4 py-2 rounded-0 text-white fw-semibold"
+              class="btn btn-primary-dark px-4 py-2 mx-1 rounded-0 text-white fw-semibold"
               >Get</a
+            >
+            <a
+              href="../ar/services.html"
+              class="btn btn-primary-dark px-4 py-2 mx-1 rounded-0 text-white fw-semibold"
+              >ar</a
             >
           </div>
         </div>
       </div>
     </nav>
     <!-- ==========================================
-         START: SERVICES SECTION
-         Structure: Grid of Hoverable Bootstrap Cards
-         ========================================== -->
+          END: GLOBAL NAVIGATION BAR
+          ========================================== -->
+
+    <!-- ==========================================
+          START: SERVICES HERO SECTION
+          ========================================== -->
     <section
       class="services-hero py-5 position-relative bg-light overflow-hidden"
     >
@@ -148,9 +177,18 @@
         </div>
       </div>
     </section>
+    <!-- ==========================================
+          END: SERVICES HERO SECTION
+          ========================================== -->
+
+    <!-- ==========================================
+          START: SERVICES GRID BLOCK
+          Structure: Grid of detailed service cards
+          ========================================== -->
     <section class="services-grid-block py-5 bg-white">
       <div class="container py-3">
         <div class="row g-4">
+          <!-- Air Freight Card -->
           <div class="col-lg-4 col-md-6">
             <div
               class="card service-detailed-card border-0 shadow-sm rounded-3 overflow-hidden h-100"
@@ -197,6 +235,7 @@
             </div>
           </div>
 
+          <!-- Ocean Freight Card -->
           <div class="col-lg-4 col-md-6">
             <div
               class="card service-detailed-card border-0 shadow-sm rounded-3 overflow-hidden h-100"
@@ -244,6 +283,7 @@
             </div>
           </div>
 
+          <!-- Land Freight Card -->
           <div class="col-lg-4 col-md-6">
             <div
               class="card service-detailed-card border-0 shadow-sm rounded-3 overflow-hidden h-100"
@@ -290,6 +330,7 @@
             </div>
           </div>
 
+          <!-- Warehousing Card -->
           <div class="col-lg-4 col-md-6">
             <div
               class="card service-detailed-card border-0 shadow-sm rounded-3 overflow-hidden h-100"
@@ -336,6 +377,7 @@
             </div>
           </div>
 
+          <!-- Custom Clearance Card -->
           <div class="col-lg-4 col-md-6">
             <div
               class="card service-detailed-card border-0 shadow-sm rounded-3 overflow-hidden h-100"
@@ -382,6 +424,7 @@
             </div>
           </div>
 
+          <!-- Supply Chains Card -->
           <div class="col-lg-4 col-md-6">
             <div
               class="card service-detailed-card border-0 shadow-sm rounded-3 overflow-hidden h-100"
@@ -430,6 +473,13 @@
         </div>
       </div>
     </section>
+    <!-- ==========================================
+          END: SERVICES GRID BLOCK
+          ========================================== -->
+
+    <!-- ==========================================
+          START: STATS COUNTER BAR
+          ========================================== -->
     <section class="stats-counter-bar py-4 bg-light">
       <div class="container">
         <div
@@ -510,13 +560,12 @@
       </div>
     </section>
     <!-- ==========================================
-         END: SERVICES SECTION
-         ========================================== -->
-          <!-- ==========================================
-         START: GLOBAL FOOTER CONFIGURATION
-         Structure: 4 Columns (Brand, Network, Support, Legal)
-        ========================================== -->
+          END: STATS COUNTER BAR
+          ========================================== -->
 
+    <!-- ==========================================
+          START: GLOBAL FOOTER CONFIGURATION
+          ========================================== -->
     <footer class="main-footer">
       <div class="container">
         <div class="row gy-4">
@@ -588,16 +637,21 @@
         </div>
 
         <hr class="footer-divider" />
-
-        <div class="footer-bottom text-center"></div>
       </div>
     </footer>
-
     <!-- ==========================================
-         END: GLOBAL FOOTER
-         ========================================== -->
-
+          END: GLOBAL FOOTER
+          ========================================== -->
+    <!-- ==========================================
+          START: GLOBAL SCRIPTS ATTACHMENT
+          Placed at bottom to optimize DOM load speed
+          ========================================== -->
+    <!-- Bootstrap 5 Compiled Bundle JS (Includes Popper Core) -->
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Application Javascript Execution File -->
     <script src="../js/main.js"></script>
+    <!-- ==========================================
+          END: GLOBAL SCRIPTS ATTACHMENT
+          ========================================== -->
   </body>
 </html>

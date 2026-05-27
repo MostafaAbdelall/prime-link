@@ -4,14 +4,27 @@
     <!-- 
     =======================================================================
     * PROJECT:     Professional Multi-page Portfolio
-    * VERSION:     1.0.0
     * PAGE:        About Me (about.html)
-    * AUTHOR:      Mostafa
+    * DESCRIPTION: About Me Page (English Version)with Multilingual Setup
+    * VERSION:     1.0.0
+    * AUTHOR:      Mostafa Abdel-All
     =======================================================================
     -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | About Me</title>
+    <meta
+      name="description"
+      content="Freight Forwarding | Logistics Services | Air Freight | Sea Freight | Customs Clearance | Warehousing | supply chain 
+               All international shipping services 
+               Global Shipping Solutions
+               Linking markets with the best service"
+    />
+    <meta
+      name="keywords"
+      content="Freight Forwarding, Logistics Services, Air Freight, Sea Freight, Customs Clearance, Warehousing, supply chain, All international shipping services, Global Shipping Solutions, Linking markets with the best service"
+    />
+    <meta name="author" content="Mostafa Abdel-All" />
+    <title>Prime Link</title>
 
     <!-- THIRD-PARTY CORE CSS STYLESHEETS -->
     <link
@@ -22,7 +35,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <!-- Bootstrap 5 Compiled CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Custom Global Stylesheet -->
     <link rel="stylesheet" href="../css/style.css" />
 
     <style>
@@ -34,8 +49,8 @@
   </head>
   <body>
     <!-- ==========================================
-         START: GLOBAL NAVIGATION BAR
-         ========================================== -->
+          START: GLOBAL NAVIGATION BAR
+          ========================================== -->
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3 border-bottom border-light"
     >
@@ -95,21 +110,26 @@
           <div class="d-flex">
             <a
               href="contact.html"
-              class="btn btn-primary-dark px-4 py-2 rounded-0 text-white fw-semibold"
+              class="btn btn-primary-dark px-4 py-2 mx-1 rounded-0 text-white fw-semibold"
               >Get</a
+            >
+            <a
+              href="../ar/about.html"
+              class="btn btn-primary-dark px-4 py-2 mx-1 rounded-0 text-white fw-semibold"
+              >ar</a
             >
           </div>
         </div>
       </div>
     </nav>
     <!-- ==========================================
-         END: GLOBAL NAVIGATION BAR
-         ========================================== -->
+          END: GLOBAL NAVIGATION BAR
+          ========================================== -->
 
     <!-- ==========================================
-         START: ABOUT ME SECTION
-         Structure: Two-column layout (Image & Text)
-         ========================================== -->
+          START: ABOUT HERO SECTION
+          Structure: Background hero with overlay
+          ========================================== -->
     <section
       class="about-hero position-relative d-flex align-items-center py-5"
       style="
@@ -151,6 +171,14 @@
         </div>
       </div>
     </section>
+    <!-- ==========================================
+          END: ABOUT HERO SECTION
+          ========================================== -->
+
+    <!-- ==========================================
+          START: WHO WE ARE SECTION
+          Structure: Two-column layout with value cards
+          ========================================== -->
     <section class="who-we-are py-5 bg-white">
       <div class="container py-4">
         <div class="row g-4 align-items-stretch">
@@ -180,6 +208,7 @@
 
           <div class="col-xl-8 col-lg-7">
             <div class="row g-4 h-100">
+              <!-- Global Network Card -->
               <div
                 class="col-sm-6 col-md-3 text-center value-card-col border-start-md"
               >
@@ -203,6 +232,7 @@
                 </p>
               </div>
 
+              <!-- Reliability Card -->
               <div
                 class="col-sm-6 col-md-3 text-center value-card-col border-start-md"
               >
@@ -226,6 +256,7 @@
                 </p>
               </div>
 
+              <!-- Customer Focused Card -->
               <div
                 class="col-sm-6 col-md-3 text-center value-card-col border-start-md"
               >
@@ -249,6 +280,7 @@
                 </p>
               </div>
 
+              <!-- Excellence Card -->
               <div
                 class="col-sm-6 col-md-3 text-center value-card-col border-start-md"
               >
@@ -292,13 +324,13 @@
       </div>
     </section>
     <!-- ==========================================
-         END: ABOUT ME SECTION
-         ========================================== -->
-          <!-- ==========================================
-         START: GLOBAL FOOTER CONFIGURATION
-         Structure: 4 Columns (Brand, Network, Support, Legal)
-        ========================================== -->
+          END: WHO WE ARE SECTION
+          ========================================== -->
 
+    <!-- ==========================================
+          START: GLOBAL FOOTER CONFIGURATION
+          Structure: 4 Columns (Brand, Network, Support, Legal)
+          ========================================== -->
     <footer class="main-footer">
       <div class="container">
         <div class="row gy-4">
@@ -370,17 +402,21 @@
         </div>
 
         <hr class="footer-divider" />
-
-        <div class="footer-bottom text-center"></div>
       </div>
     </footer>
-
     <!-- ==========================================
-         END: GLOBAL FOOTER
-         ========================================== -->
-
-    <!-- CORE SCRIPTS ATTACHMENT -->
+          END: GLOBAL FOOTER
+          ========================================== -->
+    <!-- ==========================================
+          START: GLOBAL SCRIPTS ATTACHMENT
+          Placed at bottom to optimize DOM load speed
+          ========================================== -->
+    <!-- Bootstrap 5 Compiled Bundle JS (Includes Popper Core) -->
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Application Javascript Execution File -->
     <script src="../js/main.js"></script>
+    <!-- ==========================================
+          END: GLOBAL SCRIPTS ATTACHMENT
+          ========================================== -->
   </body>
 </html>

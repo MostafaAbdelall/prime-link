@@ -1,41 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
-    <!-- 
-    =======================================================================
-    * PROJECT:     Professional Multi-page Portfolio
-    * VERSION:     1.0.0
-    * PAGE:        About Me (about.html)
-    * AUTHOR:      Mostafa
-    =======================================================================
-    -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | About Me</title>
+    <title>معرض أعمالي | من نحن</title>
 
-    <!-- THIRD-PARTY CORE CSS STYLESHEETS -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
 
     <style>
       body {
-        font-family: "Poppins", sans-serif;
+        font-family: "Cairo", "Poppins", sans-serif;
         background-color: #f8f9fa;
       }
     </style>
   </head>
   <body>
-    <!-- ==========================================
-         START: GLOBAL NAVIGATION BAR
-         ========================================== -->
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3 border-bottom border-light"
     >
@@ -43,7 +31,7 @@
         <a class="navbar-brand" href="index.html">
           <img
             src="../assets/images/Logo RGB.jpg.jpeg"
-            alt=""
+            alt="اللوجو الرئيسي"
             class="img-fluid"
             style="height: 50px"
           />
@@ -67,49 +55,46 @@
               <a
                 class="nav-link fw-semibold text-uppercase text-secondary"
                 href="index.html"
-                >Home</a
+                >الرئيسية</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link fw-semibold text-uppercase text-secondary"
                 href="services.html"
-                >Services</a
+                >خدماتنا</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link active fw-semibold text-uppercase text-dark position-relative"
                 href="about.html"
-                >About</a
+                >من نحن</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link fw-semibold text-uppercase text-secondary"
                 href="contact.html"
-                >Contact</a
+                >اتصل بنا</a
               >
             </li>
           </ul>
           <div class="d-flex">
             <a
               href="contact.html"
-              class="btn btn-primary-dark px-4 py-2 rounded-0 text-white fw-semibold"
-              >Get</a
+              class="btn btn-primary-dark px-4 py-2 mx-1 rounded-0 text-white fw-semibold"
+              >ابدأ الآن</a
+            >
+             <a
+              href="../en/about.html"
+              class="btn btn-primary-dark px-4 py-2 mx-1 rounded-0 text-white fw-semibold"
+              >EN</a
             >
           </div>
         </div>
       </div>
     </nav>
-    <!-- ==========================================
-         END: GLOBAL NAVIGATION BAR
-         ========================================== -->
-
-    <!-- ==========================================
-         START: ABOUT ME SECTION
-         Structure: Two-column layout (Image & Text)
-         ========================================== -->
     <section
       class="about-hero position-relative d-flex align-items-center py-5"
       style="
@@ -122,7 +107,7 @@
         class="position-absolute top-0 start-0 w-100 h-100"
         style="
           background: linear-gradient(
-            to right,
+            to left,
             rgba(3, 43, 105, 0.8),
             rgba(3, 43, 105, 0.4)
           );
@@ -137,20 +122,20 @@
               class="display-3 fw-bold mb-3 pb-2 position-relative"
               style="letter-spacing: -0.5px"
             >
-              About Us
+              من نحن
               <span
                 class="position-absolute bottom-0 start-0 bg-primary"
                 style="width: 60px; height: 4px"
               ></span>
             </h1>
             <p class="fs-5 opacity-90 fw-light">
-              Delivering trusted logistics solutions that connect businesses to
-              the world.
+              نقدم حلولاً لوجستية موثوقة تربط الشركات والأسواق المحتلفة بالعالم بأسره.
             </p>
           </div>
         </div>
       </div>
     </section>
+
     <section class="who-we-are py-5 bg-white">
       <div class="container py-4">
         <div class="row g-4 align-items-stretch">
@@ -159,21 +144,16 @@
               <span
                 class="text-primary fw-bold text-uppercase tracking-wider small d-block mb-2"
                 style="letter-spacing: 1px"
-                >Who We Are</span
-              >
+                >تعرّف علينا</span>
               <h2 class="fw-bold text-dark-blue mb-4 fs-3">
-                Your Trusted Logistics Partner
+                شريكك اللوجستي الموثوق
               </h2>
 
               <p class="text-muted small mb-3 lh-base">
-                At Prime Freight Solutions, we are driven by a simple mission:
-                to deliver reliable, efficient, and innovative logistics
-                services that help businesses grow and succeed globally.
+                في برايم لينك لخدمات الشحن، ننطلق من مهمة واضحة ومحددة: تقديم خدمات لوجستية موثوقة، فعالة، ومبتكرة تساعد الشركات على النمو والنجاح على الصعيد العالمي.
               </p>
               <p class="text-muted small mb-0 lh-base">
-                With a strong global network, industry expertise, and a
-                customer-first approach, we provide end-to-end supply chain
-                solutions tailored to your needs.
+                من خلال شبكتنا العالمية القوية، خبرتنا الطويلة في السوق، ونهجنا الذي يضع العميل أولاً، نوفر حلول سلاسل الإمداد المتكاملة والمصممة خصيصاً لتلبية احتياجات أعمالك.
               </p>
             </div>
           </div>
@@ -192,14 +172,13 @@
                   class="fw-bold text-dark-blue mb-2 small"
                   style="font-size: 0.9rem"
                 >
-                  Global Network
+                  شبكة عالمية
                 </h6>
                 <p
                   class="text-muted mb-0 px-2"
                   style="font-size: 0.78rem; line-height: 1.4"
                 >
-                  Extensive network across 150+ countries to connect your cargo
-                  to any destination.
+                  شبكة ممتدة تغطي أكثر من 150 دولة لربط شحناتك وبضائعك بأي وجهة تريدها.
                 </p>
               </div>
 
@@ -215,14 +194,13 @@
                   class="fw-bold text-dark-blue mb-2 small"
                   style="font-size: 0.9rem"
                 >
-                  Reliable & Secure
+                  أمان وموثوقية
                 </h6>
                 <p
                   class="text-muted mb-0 px-2"
                   style="font-size: 0.78rem; line-height: 1.4"
                 >
-                  We ensure the safety and security of your cargo with
-                  industry-leading standards.
+                  نضمن سلامة وأمان شحناتك باتباع أعلى المعايير والبروتوكولات في قطاع الشحن.
                 </p>
               </div>
 
@@ -238,14 +216,13 @@
                   class="fw-bold text-dark-blue mb-2 small"
                   style="font-size: 0.9rem"
                 >
-                  Customer Focused
+                  التركيز على العميل
                 </h6>
                 <p
                   class="text-muted mb-0 px-2"
                   style="font-size: 0.78rem; line-height: 1.4"
                 >
-                  Our customers are at the heart of everything we do. Your
-                  success is our priority.
+                  عملائنا هم دائمًا في قلب كل ما نقوم به. نجاح أعمالكم وتوسعها هو أولويتنا القصوى.
                 </p>
               </div>
 
@@ -261,14 +238,13 @@
                   class="fw-bold text-dark-blue mb-2 small"
                   style="font-size: 0.9rem"
                 >
-                  Driven by Excellence
+                  شغف بالتميز
                 </h6>
                 <p
                   class="text-muted mb-0 px-2"
                   style="font-size: 0.78rem; line-height: 1.4"
                 >
-                  We continuously innovate to deliver efficient solutions and
-                  outstanding value.
+                  نبتكر باستمرار لتقديم حلول ذكية وعالية الكفاءة تمنحك قيمة استثنائية مقابل التكلفة.
                 </p>
               </div>
             </div>
@@ -280,25 +256,17 @@
             <div
               class="quote-banner-bar d-flex align-items-center gap-3 rounded-3 p-3 text-white shadow-sm"
             >
-              <div class="quote-icon fs-3 ps-2">
-                <i class="fa-solid fa-quote-left opacity-50"></i>
+              <div class="quote-icon fs-3 pe-2">
+                <i class="fa-solid fa-quote-right opacity-50"></i>
               </div>
               <p class="mb-0 fw-semibold tracking-wide fs-6">
-                We don't link markets only but we deliver the best service.
+                نحن لا نربط بين الأسواق فحسب، بل نقدم الخدمة الأفضل على الإطلاق.
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ==========================================
-         END: ABOUT ME SECTION
-         ========================================== -->
-          <!-- ==========================================
-         START: GLOBAL FOOTER CONFIGURATION
-         Structure: 4 Columns (Brand, Network, Support, Legal)
-        ========================================== -->
-
     <footer class="main-footer">
       <div class="container">
         <div class="row gy-4">
@@ -306,63 +274,58 @@
             <div class="footer-brand">
               <img
                 src="../assets/images/logo_footer.png"
-                alt="Prime Link Logo"
+                alt="لوجو برايم لينك"
                 class="footer-logo mb-3"
               />
               <p class="copyright-text">
-                &copy; 2026 <span class="highlight">Prime Link</span> Freight
-                Solutions.<br />
-                All rights reserved.
+                &copy; 2026 جميع الحقوق محفوظة لشركة <span class="highlight">برايم لينك</span> لخدمات الشحن المتكاملة.
               </p>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-6">
-            <h5 class="footer-heading">Network</h5>
+            <h5 class="footer-heading">شبكتنا</h5>
             <ul class="footer-links list-unstyled">
               <li>
                 <a href="#"
-                  ><i class="fa-solid fa-earth-americas me-2"></i>Global
-                  Network</a
+                  ><i class="fa-solid fa-earth-americas me-2"></i>الشبكة العالمية</a
                 >
               </li>
               <li>
                 <a href="#"
-                  ><i class="fa-solid fa-ship me-2"></i>Carrier Portal</a
+                  ><i class="fa-solid fa-ship me-2"></i>بوابة الناقلين</a
                 >
               </li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6">
-            <h5 class="footer-heading">Support</h5>
+            <h5 class="footer-heading">الدعم الفني</h5>
             <ul class="footer-links list-unstyled">
               <li>
                 <a href="#"
-                  ><i class="fa-solid fa-headset me-2"></i>Support Center</a
+                  ><i class="fa-solid fa-headset me-2"></i>مركز المساعدة</a
                 >
               </li>
               <li>
                 <a href="#"
-                  ><i class="fa-solid fa-circle-question me-2"></i>FAQs</a
+                  ><i class="fa-solid fa-circle-question me-2"></i>الأسئلة الشائعة</a
                 >
               </li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6">
-            <h5 class="footer-heading">Legal & Compliance</h5>
+            <h5 class="footer-heading">الشروط والقوانين</h5>
             <ul class="footer-links list-unstyled">
               <li>
                 <a href="#"
-                  ><i class="fa-solid fa-shield-halved me-2"></i>Privacy
-                  Policy</a
+                  ><i class="fa-solid fa-shield-halved me-2"></i>سياسة الخصوصية</a
                 >
               </li>
               <li>
                 <a href="#"
-                  ><i class="fa-solid fa-file-contract me-2"></i>Terms of
-                  Service</a
+                  ><i class="fa-solid fa-file-contract me-2"></i>شروط الخدمة</a
                 >
               </li>
             </ul>
@@ -374,12 +337,6 @@
         <div class="footer-bottom text-center"></div>
       </div>
     </footer>
-
-    <!-- ==========================================
-         END: GLOBAL FOOTER
-         ========================================== -->
-
-    <!-- CORE SCRIPTS ATTACHMENT -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/main.js"></script>
   </body>

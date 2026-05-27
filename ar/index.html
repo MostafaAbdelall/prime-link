@@ -1,53 +1,53 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
-    <!-- 
+     <!-- 
     =======================================================================
     * PROJECT:     Professional Multi-page Portfolio
-    * VERSION:     1.0.0
-    * AUTHOR:      Mostafa
-    * DESCRIPTION: Home Page (English Version) with Multilingual Setup
-    =======================================================================
+    * PAGE:        index (index.html)
+    * AUTHOR:      Mostafa AbdEl-All
+    * =======================================================================
     -->
+    
+    <!-- METADATA & CONTENT CONFIGURATION -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Home</title>
+    <title>المعرض الشخصي | الرئيسية</title>
 
-    <!-- THIRD-PARTY CORE CSS STYLESHEETS -->
-    <!-- Google Fonts: Poppins (Clean Sans-Serif Typography) -->
+    <!-- EXTERNAL STYLESHEETS & FONTS -->
+    <!-- Typography: Cairo (for Arabic text) and Poppins (for English/fallback text) -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Font Awesome Icons (Scalable Vector Icons) -->
+    <!-- Iconography: FontAwesome v6.5.1 Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <!-- Bootstrap 5 Compiled CSS (Local Production File) -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Framework Stylesheet: Bootstrap v5 RTL Support -->
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
 
-    <!-- CUSTOM USER-DEFINED STYLESHEETS -->
-    <!-- Primary Global Stylesheet (LTR Layouts) -->
+    <!-- Application Custom Stylesheet -->
     <link rel="stylesheet" href="../css/style.css" />
 
-    <!-- PAGE-SPECIFIC CRITICAL INLINE STYLES -->
+    <!-- Page Specific Embedded Overrides -->
     <style>
       body {
-        font-family: "Poppins", sans-serif;
+        font-family: "Cairo", "Poppins", sans-serif;
         background-color: #f8f9fa;
       }
     </style>
   </head>
   <body>
-    <!-- ==========================================
-         START: GLOBAL NAVIGATION BAR
-         Features: Sticky-top, Responsive, Dark Theme
-         ========================================== -->
+    
+    <!-- GLOBAL NAVIGATION HEADER -->
+    <!-- Sticky-top white background navbar with standard responsive Bootstrap behavior -->
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3 border-bottom border-light"
     >
       <div class="container">
+        <!-- Brand Logo Wrapper -->
         <a
           class="navbar-brand fw-bold text-dark d-flex align-items-center"
           href="index.html"
@@ -60,6 +60,7 @@
           />
         </a>
 
+        <!-- Mobile Menu Toggle Button (Hamburger Icon) -->
         <button
           class="navbar-toggler"
           type="button"
@@ -72,57 +73,63 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Navbar Link Links & Action Buttons Group -->
         <div class="collapse navbar-collapse" id="mainNavbar">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+          <!-- Main Navigation Links -->
+          <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 gap-lg-3">
             <li class="nav-item">
               <a
                 class="nav-link active fw-semibold text-uppercase text-dark position-relative"
                 href="index.html"
-                >Home</a
+                >الرئيسية</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link fw-semibold text-uppercase text-secondary"
                 href="services.html"
-                >Services</a
+                >خدماتنا</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link fw-semibold text-uppercase text-secondary"
                 href="about.html"
-                >About</a
+                >من نحن</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link fw-semibold text-uppercase text-secondary"
                 href="contact.html"
-                >Contact</a
+                >اتصل بنا</a
               >
             </li>
           </ul>
+          
+          <!-- CTA & Localization Actions -->
           <div class="d-flex">
             <a
               href="contact.html"
+              class="btn btn-primary-dark px-4 py-2 me-2 rounded-0 text-white fw-semibold"
+              >ابدأ الآن</a
+            >
+             <a
+              href="../en/index.html"
               class="btn btn-primary-dark px-4 py-2 rounded-0 text-white fw-semibold"
-              >Get</a
+              >EN</a
             >
           </div>
         </div>
       </div>
     </nav>
-        <!-- ==========================================
-         END: GLOBAL NAVIGATION BAR
-         ========================================== -->
-    <!-- ==========================================
-          START: HERO MAIN SECTION
-          Structure: Full-Width Background Image + Overlay + Centered Content
-          ========================================== -->  
+    
+    <!-- HERO HERO BANNER SECTION -->
+    <!-- Features full height overlay background container with primary headings and call-to-actions -->
     <header
       class="hero-banner d-flex align-items-center text-center text-white position-relative"
     >
+      <!-- Dark Mask Overlay for Text Contrast and Readability -->
       <div
         class="hero-overlay position-absolute top-0 start-0 w-100 h-100"
       ></div>
@@ -130,23 +137,25 @@
       <div class="container position-relative z-1">
         <div class="row justify-content-center">
           <div class="col-xl-9 col-lg-10">
+            <!-- Main Value Proposition Heading -->
             <h1 class="display-3 fw-bold tracking-tight mb-4 text-white">
-              Linking Markets,<br />Delivering the Best Service.
+              نربط الأسواق،<br />ونقدم أفضل الخدمات.
             </h1>
+            <!-- Secondary Supporting Paragraph -->
             <p class="lead mb-5 px-md-5 text-light opacity-75 fs-5">
-              Reliable global logistics, precision execution, and institutional
-              strength to power your supply chain.
+              خدمات لوجستية عالمية موثوقة، دقة في التنفيذ، وقوة مؤسسية لدعم وتمكين سلاسل الإمداد الخاصة بك.
             </p>
+            <!-- Hero CTAs Button Grid -->
             <div class="d-flex justify-content-center gap-3 flex-wrap">
               <a
                 href="contact.html"
                 class="btn btn-white px-5 py-3 rounded-0 fw-bold"
-                >Contact Us</a
+                >تواصل معنا</a
               >
               <a
                 href="services.html"
                 class="btn btn-outline-white px-5 py-3 rounded-0 fw-bold"
-                >View Case Studies</a
+                >عرض دراسات الحالة</a
               >
             </div>
           </div>
@@ -154,113 +163,118 @@
       </div>
     </header>
 
+    <!-- KEY BUSINESS STATISTICS SECTION -->
+    <!-- Horizontal row visualizing company achievements and key metrics -->
     <section class="stats-section bg-white">
       <div class="container text-center">
         <div
-          class="row g-4  justify-content-between align-items-center text-center text-md-start  py-5"
+          class="row g-4 justify-content-between align-items-center text-center text-md-start py-5"
         >
+          <!-- Stat Item: Global Reach Countries -->
           <div
-            class="col-xl-3 col-md-6 d-md-flex align-items-center gap-3 justify-content-center justify-content-xl-start bottom-stat-col"
+            class="col-xl-3 col-md-6 d-md-flex align-items-center gap-3 justify-content-center justify-content-xl-center bottom-stat-col border-end-lg"
           >
             <div class="stat-icon text-primary fs-3 mb-2 mb-md-0">
               <i class="fa-solid fa-earth-americas"></i>
             </div>
             <div>
-              <h4 class="fw-bold text-dark-blue mb-0 fs-5">150+</h4>
+              <h4 class="fw-bold text-dark-blue mb-0 fs-5">+150</h4>
               <p
                 class="text-uppercase text-muted small fw-semibold tracking-wider mb-0"
                 style="font-size: 0.75rem"
               >
-                Countries Served
+                دولة نخدمها
               </p>
             </div>
           </div>
 
+          <!-- Stat Item: Shipments Delivered -->
           <div
-            class="col-xl-3 col-md-6 d-md-flex align-items-center gap-3 justify-content-center justify-content-xl-start bottom-stat-col"
+            class="col-xl-3 col-md-6 d-md-flex align-items-center gap-3 justify-content-center justify-content-xl-center bottom-stat-col border-end-lg"
           >
             <div class="stat-icon text-primary fs-3 mb-2 mb-md-0">
               <i class="fa-solid fa-box-archive"></i>
             </div>
             <div>
-              <h4 class="fw-bold text-dark-blue mb-0 fs-5">1M+</h4>
+              <h4 class="fw-bold text-dark-blue mb-0 fs-5">+1 مليون</h4>
               <p
                 class="text-uppercase text-muted small fw-semibold tracking-wider mb-0"
                 style="font-size: 0.75rem"
               >
-                Shipments Delivered
+                شحنة تم تسليمها
               </p>
             </div>
           </div>
 
+          <!-- Stat Item: Years of Industry Experience -->
           <div
-            class="col-xl-3 col-md-6 d-md-flex align-items-center gap-3 justify-content-center justify-content-xl-start bottom-stat-col"
+            class="col-xl-3 col-md-6 d-md-flex align-items-center gap-3 justify-content-center justify-content-xl-center bottom-stat-col border-end-lg"
           >
             <div class="stat-icon text-primary fs-3 mb-2 mb-md-0">
               <i class="fa-solid fa-user-tie"></i>
             </div>
             <div>
-              <h4 class="fw-bold text-dark-blue mb-0 fs-5">25+</h4>
+              <h4 class="fw-bold text-dark-blue mb-0 fs-5">+25</h4>
               <p
                 class="text-uppercase text-muted small fw-semibold tracking-wider mb-0"
                 style="font-size: 0.75rem"
               >
-                Years of Experience
+                عاماً من الخبرة
               </p>
             </div>
           </div>
 
+          <!-- Stat Item: On-time Delivery Rate -->
           <div
-            class="col-xl-3 col-md-6 d-md-flex align-items-center gap-3 justify-content-center justify-content-xl-start"
+            class="col-xl-3 col-md-6 d-md-flex align-items-center gap-3 justify-content-center justify-content-xl-center border-end-lg"
           >
             <div class="stat-icon text-primary fs-3 mb-2 mb-md-0">
               <i class="fa-regular fa-clock"></i>
             </div>
             <div>
-              <h4 class="fw-bold text-dark-blue mb-0 fs-5">99.9%</h4>
+              <h4 class="fw-bold text-dark-blue mb-0 fs-5">%99.9</h4>
               <p
                 class="text-uppercase text-muted small fw-semibold tracking-wider mb-0"
                 style="font-size: 0.75rem"
               >
-                On-Time Delivery
+                التسليم في الوقت المحدد
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- ==========================================
-         END: HERO MAIN SECTION
-         ========================================== -->
-
-    <!-- ==========================================
-         START: CORE SERVICES HIGHLIGHT SECTION
-         Structure: Icon + Title + Description
-        ========================================== -->
-
+    
+    <!-- SERVICES & CORE COMPETENCIES SECTION -->
     <section class="services-section py-5 bg-white">
       <div class="container py-3">
+        
+        <!-- Part 1: Section Introduction & Highlight Grid -->
         <div class="row align-items-center g-4 mb-5">
+          <!-- Text Content & Value Pillars -->
           <div class="col-lg-6">
+            <!-- Section Titles -->
             <div class="row g-3 mb-3">
               <span
                 class="text-primary fw-bold text-uppercase tracking-wider small d-block mb-2"
                 style="letter-spacing: 1.5px"
-                >Core Logistics Solutions</span
+                >حلول اللوجستيات الأساسية</span
               >
               <h2
                 class="display-5 fw-bold text-dark-blue mb-3"
                 style="font-size: 2.75rem"
               >
-                Global Freight Solutions
+                حلول الشحن العالمية
               </h2>
               <p class="text-muted mb-0 fs-5 lh-base" style="max-width: 90%">
-                End-to-end logistics services that connect businesses to global
-                markets with reliability, efficiency, and care.
+                خدمات لوجستية متكاملة تربط الشركات بالأسواق العالمية بكل موثوقية، كفاءة، وعناية فائقة.
               </p>
             </div>
+            
+            <!-- Core Value Grid Checklist -->
             <div class="row g-4 mb-5 pb-5 border-bottom border-light-subtle">
+              
+              <!-- Value 1: Global Reach -->
               <div class="col-xl-3 col-md-6">
                 <div
                   class="feature-item d-flex flex-column align-items-center text-center align-items-sm-start text-sm-start pe-xl-3"
@@ -274,13 +288,15 @@
                     class="fw-bold text-dark-blue text-uppercase mb-2"
                     style="letter-spacing: 0.5px; font-size: 0.85rem"
                   >
-                    Global Reach
+                    وصول عالمي
                   </h6>
                   <p class="text-muted small mb-0 lh-sm">
-                    Extensive network across 150+ countries and key trade lanes.
+                    شبكة ممتدة تشمل أكثر من 150 دولة وممرات تجارية رئيسية.
                   </p>
                 </div>
               </div>
+
+              <!-- Value 2: Security & Trust -->
               <div class="col-xl-3 col-md-6">
                 <div
                   class="feature-item d-flex flex-column align-items-center text-center align-items-sm-start text-sm-start pe-xl-3"
@@ -294,13 +310,15 @@
                     class="fw-bold text-dark-blue text-uppercase mb-2"
                     style="letter-spacing: 0.5px; font-size: 0.85rem"
                   >
-                    Reliable & Secure
+                    آمن وموثوق
                   </h6>
                   <p class="text-muted small mb-0 lh-sm">
-                    Industry-leading safety, compliance, and cargo protection.
+                    مستويات رائدة في السلامة، الامتثال، وحماية الشحنات.
                   </p>
                 </div>
               </div>
+
+              <!-- Value 3: Operational Efficiency -->
               <div class="col-xl-3 col-md-6">
                 <div
                   class="feature-item d-flex flex-column align-items-center text-center align-items-sm-start text-sm-start pe-xl-3"
@@ -314,14 +332,15 @@
                     class="fw-bold text-dark-blue text-uppercase mb-2"
                     style="letter-spacing: 0.5px; font-size: 0.85rem"
                   >
-                    Efficiency Driven
+                    كفاءة تشغيلية
                   </h6>
                   <p class="text-muted small mb-0 lh-sm">
-                    Optimized routes and smart solutions to reduce time and
-                    cost.
+                    مسارات محسّنة وحلول ذكية لتقليل الوقت والتكلفة.
                   </p>
                 </div>
               </div>
+
+              <!-- Value 4: Customer-Centric Support -->
               <div class="col-xl-3 col-md-6">
                 <div
                   class="feature-item d-flex flex-column align-items-center text-center align-items-sm-start text-sm-start"
@@ -335,17 +354,20 @@
                     class="fw-bold text-dark-blue text-uppercase mb-2"
                     style="letter-spacing: 0.5px; font-size: 0.85rem"
                   >
-                    Customer Focused
+                    تركيز على العميل
                   </h6>
                   <p class="text-muted small mb-0 lh-sm">
-                    Dedicated support and tailored solutions for your business.
+                    دعم مخصص وحلول مصممة خصيصاً لتلبية متطلبات أعمالك.
                   </p>
                 </div>
               </div>
+
             </div>
           </div>
+          
+          <!-- Illustrative Promo Graphic Banner -->
           <div class="col-lg-6">
-            <div class="position-relative text-center text-lg-end">
+            <div class="position-relative text-center text-lg-start">
               <img
                 src="../assets/images/global-freight-logistics.png"
                 alt="Global Freight Logistics"
@@ -355,7 +377,10 @@
           </div>
         </div>
 
+        <!-- Part 2: Detailed Services Panel Cards Group -->
         <div class="row g-4">
+          
+          <!-- Service Card 1: Ocean Freight Services -->
           <div class="col-lg-6">
             <div
               class="service-panel-card d-flex flex-column flex-md-row rounded-3 overflow-hidden shadow-sm h-100"
@@ -369,22 +394,22 @@
                   <i class="fa-solid fa-ship fs-5"></i>
                 </div>
                 <h4 class="fw-bold text-uppercase mb-3 tracking-wide">
-                  Ocean Freight
+                  الشحن البحري
                 </h4>
                 <p class="text-light opacity-75 small mb-0">
-                  Reliable ocean shipping solutions for FCL, LCL, and
-                  specialized cargo worldwide.
+                  حلول شحن بحري موثوقة للحاويات الكاملة (FCL)، الشحنات المجزأة (LCL)، والبضائع المتخصصة حول العالم.
                 </p>
               </div>
               <div
                 class="service-panel-img"
                 style="
-                  background-image: url(&quot;../assets/images/ocean-freight-bg.jpg&quot;);
+                  background-image: url('../assets/images/ocean-freight-bg.jpg');
                 "
               ></div>
             </div>
           </div>
 
+          <!-- Service Card 2: Air Freight Services -->
           <div class="col-lg-6">
             <div
               class="service-panel-card d-flex flex-column flex-md-row rounded-3 overflow-hidden shadow-sm h-100"
@@ -398,22 +423,22 @@
                   <i class="fa-solid fa-plane-departure fs-5"></i>
                 </div>
                 <h4 class="fw-bold text-uppercase mb-3 tracking-wide">
-                  Air Freight
+                  الشحن الجوي
                 </h4>
                 <p class="text-light opacity-75 small mb-0">
-                  Fast and secure air freight services for time-critical and
-                  high-value shipments globally.
+                  خدمات شحن جوي سريعة وآمنة للشحنات الحساسة للوقت والشحنات ذات القيمة العالية عالمياً.
                 </p>
               </div>
               <div
                 class="service-panel-img"
                 style="
-                  background-image: url(&quot;../assets/images/air-freight-bg.jpg&quot;);
+                  background-image: url('../assets/images/air-freight-bg.jpg');
                 "
               ></div>
             </div>
           </div>
 
+          <!-- Service Card 3: Land Transport Services -->
           <div class="col-lg-6">
             <div
               class="service-panel-card d-flex flex-column flex-md-row rounded-3 overflow-hidden shadow-sm h-100"
@@ -427,22 +452,22 @@
                   <i class="fa-solid fa-truck-front fs-5"></i>
                 </div>
                 <h4 class="fw-bold text-uppercase mb-3 tracking-wide">
-                  Land Transport
+                  النقل البري
                 </h4>
                 <p class="text-light opacity-75 small mb-0">
-                  Extensive road network for efficient trucking and cross-border
-                  delivery.
+                  شبكة طرق برية واسعة لخدمات النقل بالشاحنات بكفاءة عالية والتوصيل العابر للحدود.
                 </p>
               </div>
               <div
                 class="service-panel-img"
                 style="
-                  background-image: url(&quot;../assets/images/land-transport-bg.jpg&quot;);
+                  background-image: url('../assets/images/land-transport-bg.jpg');
                 "
               ></div>
             </div>
           </div>
 
+          <!-- Service Card 4: Warehousing & Fulfillment -->
           <div class="col-lg-6">
             <div
               class="service-panel-card d-flex flex-column flex-md-row rounded-3 overflow-hidden shadow-sm h-100"
@@ -456,130 +481,114 @@
                   <i class="fa-solid fa-warehouse fs-5"></i>
                 </div>
                 <h4 class="fw-bold text-uppercase mb-3 tracking-wide">
-                  Warehousing
+                  التخزين والمستودعات
                 </h4>
                 <p class="text-light opacity-75 small mb-0">
-                  Secure storage, inventory management, and seamless
-                  distribution to keep your supply chain moving.
+                  تخزين آمن، إدارة ذكية للمخزون، وتوزيع سلس لضمان استمرار حركة سلاسل الإمداد الخاصة بك دون توقف.
                 </p>
               </div>
               <div
                 class="service-panel-img"
                 style="
-                  background-image: url(&quot;../assets/images/warehouse-bg.jpg&quot;);
+                  background-image: url('../assets/images/warehouse-bg.jpg');
                 "
               ></div>
             </div>
           </div>
         </div>
       </div>
+      
+      <!-- B2B Strategic Partners Showcase Container -->
       <div class="container text-center mt-5 pt-5">
-        <p class="text-uppercase text-start text-muted small fw-semibold  " style="font-size: 1.25rem"> 
-          Some Of Our Big Customers :
+        <p class="text-uppercase text-start text-muted small fw-semibold" style="font-size: 1.25rem"> 
+          بعض من كبار عملائنا :
         </p>
-
          <img src="../assets/images/partners (2).png" alt="" class="img-fluid" />
       </div>
- 
     </section>
-    <!-- ==========================================
-         END: CORE SERVICES HIGHLIGHT SECTION
-         ========================================== -->
 
-    <!-- ==========================================
-         START: GLOBAL FOOTER CONFIGURATION
-         Structure: 4 Columns (Brand, Network, Support, Legal)
-        ========================================== -->
-
+    <!-- MAIN APP FOOTER COMPONENT -->
     <footer class="main-footer">
       <div class="container">
         <div class="row gy-4">
+          <!-- Identity and Copyright Column -->
           <div class="col-lg-4 col-md-6">
             <div class="footer-brand">
               <img
                 src="../assets/images/logo_footer.png"
-                alt="Prime Link Logo"
+                alt="لوجو برايم لينك"
                 class="footer-logo mb-3"
               />
               <p class="copyright-text">
-                &copy; 2026 <span class="highlight">Prime Link</span> Freight
-                Solutions.<br />
-                All rights reserved.
+                &copy; 2026 جميع الحقوق محفوظة لشركة <span class="highlight">برايم لينك</span> لخدمات الشحن المتكاملة.
               </p>
             </div>
           </div>
 
+          <!-- Navigation Links Column: Network Infrastructure -->
           <div class="col-lg-2 col-md-6">
-            <h5 class="footer-heading">Network</h5>
+            <h5 class="footer-heading">شبكتنا</h5>
             <ul class="footer-links list-unstyled">
               <li>
                 <a href="#"
-                  ><i class="fa-solid fa-earth-americas me-2"></i>Global
-                  Network</a
+                  ><i class="fa-solid fa-earth-americas me-2"></i>الشبكة العالمية</a
                 >
               </li>
               <li>
                 <a href="#"
-                  ><i class="fa-solid fa-ship me-2"></i>Carrier Portal</a
+                  ><i class="fa-solid fa-ship me-2"></i>بوابة الناقلين</a
                 >
               </li>
             </ul>
           </div>
 
+          <!-- Navigation Links Column: Customer Support Ecosystem -->
           <div class="col-lg-3 col-md-6">
-            <h5 class="footer-heading">Support</h5>
+            <h5 class="footer-heading">الدعم الفني</h5>
             <ul class="footer-links list-unstyled">
               <li>
                 <a href="#"
-                  ><i class="fa-solid fa-headset me-2"></i>Support Center</a
+                  ><i class="fa-solid fa-headset me-2"></i>مركز المساعدة</a
                 >
               </li>
               <li>
                 <a href="#"
-                  ><i class="fa-solid fa-circle-question me-2"></i>FAQs</a
+                  ><i class="fa-solid fa-circle-question me-2"></i>الأسئلة الشائعة</a
                 >
               </li>
             </ul>
           </div>
 
+          <!-- Navigation Links Column: Compliance & Legal Information -->
           <div class="col-lg-3 col-md-6">
-            <h5 class="footer-heading">Legal & Compliance</h5>
+            <h5 class="footer-heading">الشروط والقوانين</h5>
             <ul class="footer-links list-unstyled">
               <li>
                 <a href="#"
-                  ><i class="fa-solid fa-shield-halved me-2"></i>Privacy
-                  Policy</a
+                  ><i class="fa-solid fa-shield-halved me-2"></i>سياسة الخصوصية</a
                 >
               </li>
               <li>
                 <a href="#"
-                  ><i class="fa-solid fa-file-contract me-2"></i>Terms of
-                  Service</a
+                  ><i class="fa-solid fa-file-contract me-2"></i>شروط الخدمة</a
                 >
               </li>
             </ul>
           </div>
         </div>
 
+        <!-- Section Border Separator -->
         <hr class="footer-divider" />
 
+        <!-- Bottom Footer Utility bar (Reserved for dynamic credits or localization flags) -->
         <div class="footer-bottom text-center"></div>
       </div>
     </footer>
 
-    <!-- ==========================================
-         END: GLOBAL FOOTER
-         ========================================== -->
-    <!-- ==========================================
-         START: GLOBAL SCRIPTS ATTACHMENT
-         Placed at bottom to optimize DOM load speed
-         ========================================== -->
-    <!-- Bootstrap 5 Compiled Bundle JS (Includes Popper Core) -->
+    <!-- CORE DEPENDENCIES JAVASCRIPT SCRIPTS -->
+    <!-- Framework Engine Bundle (Includes Bootstrap core & Popper.js) -->
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <!-- Custom Application Javascript Execution File -->
+    <!-- Core App Custom Scripts -->
     <script src="../js/main.js"></script>
-    <!-- ==========================================
-         END: GLOBAL SCRIPTS ATTACHMENT
-         ========================================== -->
   </body>
 </html>
